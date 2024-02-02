@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/payment.restopay.css" />
+		<title>Simulasi UKK</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="">
+				<img src="" alt="resto-kami" />
+				<h3>Payment Succes</h3>
+			</header>
+			<main class="-menu">
+				<!-- total pembayaran -->
+				<div class="-price">
+					<h4>Total Pembayaran Sebesar</h4>
+					<h3 id="total"></h3>
+				</div>
+				<div class="-status">
+					<div class="-container">
+						<img src="" alt="" />
+					</div>
+					<p>Pembayaran berhasil!</p>
+				</div>
+			</main>
+			<footer>
+				<p>
+					&copy; 2023 Restoran Kami. <br />
+					All rights reserved.
+				</p>
+			</footer>
+		</div>
+		<!-- <script src="script/menu.js"></script> -->
+		<script>
+			// set style mata uang (optional)
+			const formatUang = (rupiah) => {
+				return rupiah.toLocaleString("id-ID", {
+					style: "currency",
+					currency: "IDR",
+					minimumFractionDigits: 0,
+				});
+			};
+
+			let total = parseInt(localStorage.getItem("total"));
+			document.getElementById("total").innerHTML = formatUang(total);
+		</script>
+	</body>
+</html>

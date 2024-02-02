@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 360px; /* Batasan lebar maksimum untuk ukuran mobile */
+	height: 100vh;
+	margin: 0 auto; /* Pusatkan kontainer pada layar */
+	/* flex properties 
+
+	...
+	...
+	...
+	...	
+
+	*/
+	filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+		drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+/* Footer styles */
+/* footer {
+	margin: ;
+	width: 360px;
+}
+footer p {
+	text-: center;
+	font-: 12px;
+} */
+
+/* Font init */
+/* @font-face {
+	font-family: "Quicksand";
+	....;
+}
+
+@font-face {
+	font-family: "Nunito";
+	....;
+} */

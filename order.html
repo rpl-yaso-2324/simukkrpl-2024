@@ -1,0 +1,76 @@
+<!-- zacki xii rpl 3 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		/>
+		<link rel="stylesheet" href="" />
+		<link rel="stylesheet" href="" />
+		<title>Simulasi UKK</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="">
+				<img src="" alt="resto-kami" />
+				<h3>Order</h3>
+			</header>
+			<main class="-menu">
+				<!-- info pemesanan -->
+				<div class="-title" aria-readonly="true">
+					<p>Info Pemesanan</p>
+					<hr class="line" />
+				</div>
+				<div id="info"></div>
+				<!-- total pembayaran -->
+				<div class="-price">
+					<h4>Total Pembayaran Sebesar</h4>
+					<h3 id="total"></h3>
+				</div>
+				<!-- metode pembayaran -->
+				<div class="-title" aria-readonly="true">
+					<p>Metode pembayaran</p>
+					<hr class="line" />
+				</div>
+				<!-- resto pay -->
+				<div class="-pembayaran">
+					<div class="--restopay">
+						<div class="-radio" style="display: flex; justify-content: center">
+							<input type="radio" name="restoPay" id="" />
+							<label for="restoPay" style="font-size: 14px; margin-left: 5px"
+								>Resto Pay</label
+							>
+						</div>
+						<div class="detail-">
+							<p>Saldo Resto Pay</p>
+							<p id="saldo"></p>
+						</div>
+					</div>
+					<!-- cash -->
+					<div class="--cash">
+						<div class="-radio" style="display: flex; justify-content: center">
+							<input type="radio" name="restoPay" id="" />
+							<label for="Cash" style="font-size: 14px; margin-left: 5px"
+								>Cash</label
+							>
+						</div>
+						<div class="detail-">
+							<p>Siapkan uang sesuai nominal pembayaran !</p>
+						</div>
+					</div>
+				</div>
+				<!-- button bayar -->
+				<button type="button" onclick="" class="-pay">Bayar</button>
+			</main>
+			<footer>
+				<p>
+					&copy; 2023 Restoran Kami. <br />
+					All rights reserved.
+				</p>
+			</footer>
+		</div>
+		<script src=""></script>
+	</body>
+</html>
